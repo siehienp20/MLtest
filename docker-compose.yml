@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  tensorflow:
+    image: 'tensorflow/tensorflow:latest-jupyter'
+
+    ports:
+      # port for notebooks
+      - '8888:8888'
+      
+    volumes:
+      - .:/tf/notebooks
